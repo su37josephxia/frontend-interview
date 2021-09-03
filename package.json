@@ -4,7 +4,8 @@
   "description": "前端面试知识点",
   "main": "index.js",
   "scripts": {
-    "start": "spress start"
+    "start": "spress start ./doc",
+    "build": "spress build ./doc"
   },
   "repository": {
     "type": "git",
