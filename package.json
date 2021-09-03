@@ -1,0 +1,23 @@
+{
+  "name": "frontend-interview",
+  "version": "1.0.0",
+  "description": "前端面试知识点",
+  "main": "index.js",
+  "scripts": {
+    "start": "spress start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/su37josephxia/frontend-interview.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/su37josephxia/frontend-interview/issues"
+  },
+  "homepage": "https://github.com/su37josephxia/frontend-interview#readme",
+  "dependencies": {
+    "smarty-press": "0.0.5"
+  }
+}
