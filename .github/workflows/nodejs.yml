@@ -1,4 +1,4 @@
-name: VuePress to Aliyun
+name: Deploy to Aliyun
 
 on:
   push:
