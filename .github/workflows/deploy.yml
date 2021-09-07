@@ -18,10 +18,13 @@ jobs:
       with:
         node-version: 13.2.0
     # 安装依赖和编译
-    - name: Npm install and build
+    - name: Npm install
       # 运行的命令或者 action
       run: |
         npm install
+    - name: Npm build
+      # 运行的命令或者 action
+      run: |
         npm run build
     # 部署到阿里云
     - name: Deploy to Aliyun
