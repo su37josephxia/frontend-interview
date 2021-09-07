@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/su37josephxia/frontend-interview#readme",
   "dependencies": {
-    "smarty-press": "0.0.5"
+    "smarty-press": "0.0.8"
   }
 }
