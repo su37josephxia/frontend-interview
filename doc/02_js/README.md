@@ -1,5 +1,6 @@
-# Javascript与DOM
+# Javascript基础
 ## 原型、构造函数、实例
+
 ## 原型链
 ## 执行上下文
 ## 变量对象
