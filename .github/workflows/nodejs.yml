@@ -13,7 +13,7 @@ jobs:
     # 下载代码
     - uses: actions/checkout@v2
     # 安装Nodejs
-    - name: Setup Node.js 13.2.0
+    - name: Setup Node.js 13.2
       uses: actions/setup-node@v1
       with:
         node-version: 13.2.0
