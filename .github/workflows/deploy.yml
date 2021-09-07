@@ -32,7 +32,7 @@ jobs:
       env:
         SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
         ARGS: "-avzr --delete"
-        SOURCE: "frontend-interview/.vuepress/dist"
+        SOURCE: "dist"
         REMOTE_HOST: "47.98.252.43"
         REMOTE_USER: "root"
         TARGET: "/root/frontend-interview"
