@@ -1,7 +1,10 @@
 <template>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="/assets/adminlte.min.css" />
+  <!-- <link rel="stylesheet" href="/assets/adminlte.min.css" />
+   -->
+
+  <link href="https://cdn.bootcdn.net/ajax/libs/admin-lte/3.1.0/css/adminlte.min.css" rel="stylesheet"> 
   <link rel="stylesheet" :href="skinPath" />
   <link rel="stylesheet" href="/assets/responsive.css" />
 

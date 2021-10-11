@@ -15,6 +15,10 @@
 
 ## 作用域链
 <iframe src="//player.bilibili.com/player.html?aid=711412869&bvid=BV1wD4y1D7Pp&cid=213760015&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+## 函数作用域
+<iframe src="//player.bilibili.com/player.html?aid=68195454&bvid=BV1AJ41137cW&cid=118200453&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
 ## 闭包
 <iframe src="//player.bilibili.com/player.html?aid=74450413&bvid=BV1iE411q7Qd&cid=127346643&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
