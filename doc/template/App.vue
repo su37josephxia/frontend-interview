@@ -1,10 +1,24 @@
 <template>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <!-- <link rel="stylesheet" href="/assets/adminlte.min.css" />
    -->
 
-  <link href="https://cdn.bootcdn.net/ajax/libs/admin-lte/3.1.0/css/adminlte.min.css" rel="stylesheet"> 
+  <!-- 百度统计 -->
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?83882d256e3353ab5f39c27a3fa50b23";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+  <link
+    href="https://cdn.bootcdn.net/ajax/libs/admin-lte/3.1.0/css/adminlte.min.css"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" :href="skinPath" />
   <link rel="stylesheet" href="/assets/responsive.css" />
 
