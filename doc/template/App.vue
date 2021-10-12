@@ -1,26 +1,18 @@
 <template>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta charset="UTF-8" />
-  <!-- <link rel="stylesheet" href="/assets/adminlte.min.css" />
+  <header>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <!-- <link rel="stylesheet" href="/assets/adminlte.min.css" />
    -->
+    <script src="/assets/baidu_tongji.js"></script>
 
-  <!-- 百度统计 -->
-  <script>
-    var _hmt = _hmt || [];
-    (function () {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?83882d256e3353ab5f39c27a3fa50b23";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-
-  <link
-    href="https://cdn.bootcdn.net/ajax/libs/admin-lte/3.1.0/css/adminlte.min.css"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" :href="skinPath" />
-  <link rel="stylesheet" href="/assets/responsive.css" />
+    <link
+      href="https://cdn.bootcdn.net/ajax/libs/admin-lte/3.1.0/css/adminlte.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" :href="skinPath" />
+    <link rel="stylesheet" href="/assets/responsive.css" />
+  </header>
 
   <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper fixed">
@@ -33,7 +25,7 @@
             <div class="user-panel mt-3 pb-3 mb-3 d-flex">
               <div class="image">
                 <img
-                  src="/assets/logo.png"
+                  src="/assets/ranshu.png"
                   class="img-circle elevation-2"
                   alt="User Image"
                 />
