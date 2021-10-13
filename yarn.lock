@@ -893,7 +893,7 @@
   dependencies:
     "is-glob" "^4.0.1"
 
-"glob@^7.1.6":
+"glob@^7.2.0":
   "integrity" "sha1-0VU1r3cy4C6Uj0xBYovZECk/YCM="
   "resolved" "https://registry.npmmirror.com/glob/download/glob-7.2.0.tgz?cache=0&sync_timestamp=1632354209679&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fglob%2Fdownload%2Fglob-7.2.0.tgz"
   "version" "7.2.0"
@@ -1945,10 +1945,10 @@
   "resolved" "https://registry.npm.taobao.org/signal-exit/download/signal-exit-3.0.3.tgz"
   "version" "3.0.3"
 
-"smarty-press@0.0.10":
-  "integrity" "sha512-UATcAu0dLtb706SYPON1X7Vm6zxT7yQXQTZek9H17sxVD6faS7/y41Fznyw2SwoTA20Mr/JjXHmMyBlmwXn8Iw=="
-  "resolved" "https://registry.npmjs.org/smarty-press/-/smarty-press-0.0.10.tgz"
-  "version" "0.0.10"
+"smarty-press@0.0.11":
+  "integrity" "sha1-Auvhm9a1BMK9NeAKfPIMyvTG4a0="
+  "resolved" "https://registry.npmmirror.com/smarty-press/download/smarty-press-0.0.11.tgz?cache=0&sync_timestamp=1634112300939&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fsmarty-press%2Fdownload%2Fsmarty-press-0.0.11.tgz"
+  "version" "0.0.11"
   dependencies:
     "@vue/compiler-dom" "^3.2.20"
     "@vue/compiler-sfc" "^3.2.20"
@@ -1960,7 +1960,7 @@
     "clear" "^0.1.0"
     "commander" "^6.0.0"
     "figlet" "^1.5.0"
-    "glob" "^7.1.6"
+    "glob" "^7.2.0"
     "koa" "^2.12.0"
     "koa-static" "^5.0.0"
     "marked" "^1.1.1"
