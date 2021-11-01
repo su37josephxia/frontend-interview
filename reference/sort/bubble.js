@@ -1,4 +1,4 @@
-const input = [1,3,2]
+var input = [1,3,2]
 console.log(sort(input))
 
 function sort(arr) {
