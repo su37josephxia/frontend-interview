@@ -1,7 +1,50 @@
-# 算法
-> 参考资料 
+# 🔥 数据结构与算法
 
 
+## 基础分类
+
+| Fundamentals             |                      | 基本         |
+| ------------------------ | -------------------- | ------------ |
+|                          | Array                | 数组         |
+|                          | String               | 字符串       |
+|                          | Sorting              | 排序         |
+|                          | Matrix               | 矩阵         |
+|                          | Simulation           | 模拟         |
+|                          | Enumeration          | 枚举         |
+|                          | String Matching      | 字符串匹配   |
+|                          | Bucket Sort          | 桶排序       |
+|                          | Counting Sort        | 计数排序     |
+|                          | Radix Sort           | 基数排序     |
+| Algorithms               |                      | 算法         |
+|                          | Dynamic Programming  | 动态规划     |
+|                          | Depth-First Search   | 深度优先搜索 |
+|                          | Breadth-First Search | 广度优先搜索 |
+|                          | Greedy               | 贪心         |
+|                          | Binary Search        | 二分查找     |
+|                          | Backtracking         | 回溯         |
+|                          | Recursion            | 递归         |
+|                          | Divide and Conquer   | 分治         |
+|                          | Memoization          | 记忆化搜索   |
+|                          | Merge Sort           | 归并排序     |
+|                          | Quickselect          | 快速选择     |
+| Common Data Structures   |                      | 基础数据结构 |
+|                          | Hash Table           | 哈希表       |
+|                          | Tree                 | 树           |
+|                          | Binary Tree          | 二叉树       |
+|                          | Stack                | 栈           |
+| Advanced Data Structures |                      |              |
+|                          | Union Find           | 并查集       |
+|                          | Trie                 | 字典树       |
+|                          | Segment Tree         | 线段树       |
+| Techniques               |                      | 技巧         |
+|                          | Two Pointers         | 双指针       |
+|                          | Bit Manipulation     | 位运算       |
+|                          | Prefix Sum           | 前缀求和     |
+
+
+
+
+## Leetcode题目
 
 | 分类           | 分类题                                                   | leetcode地址                                                 | 难度 |
 | -------------- | -------------------------------------------------------- | ------------------------------------------------------------ | ---- |
@@ -14,7 +57,7 @@
 |                | 通过删除字母匹配到字典里最长单词                         | https://leetcode-cn.com/problems/longest-word-in-dictionary-through-deleting/description/ | 简单 |
 | 链表           | 合并两个排序的链表                                       | https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/ | 简单 |
 |                | 从尾到头打印链表                                         | https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof | 简单 |
-|                | 相交链表                                                 | 请补充LeetCode地址                                           | 简单 |
+|                | 相交链表                                                 |                                            | 简单 |
 |                | 翻转链表                                                 | https://leetcode-cn.com/problems/reverse-linked-list/        | 简单 |
 |                | 返回倒数第 k 个节点                                      | https://leetcode-cn.com/problems/kth-node-from-end-of-list-lcci/ | 简单 |
 |                | 环形链表                                                 | https://leetcode-cn.com/problems/linked-list-cycle/          | 简单 |
@@ -152,7 +195,7 @@
 |                |                                                          |                                                              |      |
 | 递归           | 反转字符串                                               | https://leetcode-cn.com/problems/reverse-string/             | 简单 |
 |                |                                                          |                                                              |      |
-| 深度优先遍历   | 深度优先遍历                                             | 请补充LeetCode地址                                           |      |
+| 深度优先遍历   | 深度优先遍历                                             |                                            |      |
 |                |                                                          |                                                              |      |
 |                |                                                          |                                                              |      |
-| 广度优先遍历   | 广度优先遍历                                             | 请补充LeetCode地址                                           |      |
+| 广度优先遍历   | 广度优先遍历                                             |                                            |      |
