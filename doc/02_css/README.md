@@ -1,5 +1,60 @@
 # HTML + CSS
 
+### 解释一下BFC ?
+
+### 设置超出省略号，设置多行超出省略号，设置兼容性较好的多行超出省略号。（阿里）
+
+### **CSS3新的特性？**
+
+### CSS如何使GPU加速 ?
+
+### 什么是**媒体查询**
+
+媒体查询定义两套css，当浏览器的尺寸变化时会采用不同的属性。
+
+### 元素居中的方式有哪些？
+
+### 自适应的方案？
+
+**viewport方案**
+
+rem方案
+
+### 父容器高度塌陷的解决方案？
+
+
+
+### Flex布局
+
+一些做移动端开发的大概率会问，尤其是做ui-app的
+
+- 有用过flex吗
+- 说下flex有哪些属性
+- 使用flex实现垂直居中
+- 使用flex实现九宫格布局
+
+
+
+### css的动画吗？说下transform
+
+
+
+### [link标签](https://www.zhihu.com/search?q=link标签&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType":"article","sourceId":224922926})和import标签的区别
+
+
+
+### position属性有哪些值分别介绍一下(阿里)？
+
+#### relative的定位规则?
+
+
+
+### 那些css属性可以被继承（阿里）
+
+
+
+
+
 > 这一章的主角应该 [青盟课堂](https://space.bilibili.com/472014514) 
 > 讲的真的很赞👍
 ## 布局手段
