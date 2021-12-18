@@ -1,4 +1,3 @@
-
 # this、call、apply、bind
 
 ### 如何改变this的指向？
