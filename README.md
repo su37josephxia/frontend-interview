@@ -1,17 +1,17 @@
 # 前端面试题汇总
 
 <p align="center">
-<a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=javascript" alt="vue"></a>
-<a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=css" alt="es6"></a>
-  <a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=vue" alt="css"></a>
+<a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=javascript" ></a>
+<a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=css" ></a>
+  <a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=vue" ></a>
   <a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=react" alt="javascript"></a>
   <a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=webpack" alt="javascript"></a>
-    <a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=算法" alt="javascript"></a>
-<a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=javascript" alt="设计模式"></a>
-<a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=性能优化" alt="es6"></a>
-  <a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=工程化" alt="css"></a>
-  <a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=安全" alt="javascript"></a>
-  <a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=多端应用" alt="javascript"></a>
+    <a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=pattern" alt="javascript"></a>
+<a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=hybird" alt="设计模式"></a>
+<a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=optimizing" alt="es6"></a>
+  <a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=engineering" alt="css"></a>
+  <a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=security" alt="javascript"></a>
+  <a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=algorithm" alt="javascript"></a>
     <a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=mvvm" alt="javascript"></a>
 </p>
 
