@@ -1,5 +1,24 @@
 # 前端面试题汇总
 
+<p align="center">
+<a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=javascript" alt="vue"></a>
+<a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=css" alt="es6"></a>
+  <a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=vue" alt="css"></a>
+  <a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=react" alt="javascript"></a>
+  <a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=webpack" alt="javascript"></a>
+    <a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=算法" alt="javascript"></a>
+<a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=javascript" alt="设计模式"></a>
+<a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=性能优化" alt="es6"></a>
+  <a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=工程化" alt="css"></a>
+  <a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=安全" alt="javascript"></a>
+  <a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=多端应用" alt="javascript"></a>
+    <a href="https://github.com/su37josephxia/frontend-interview/issues"><img src="https://img.shields.io/github/languages/top/badges/shields.svg?label=mvvm" alt="javascript"></a>
+</p>
+
+
+
+
+
 本仓库为语音打卡社群（前端大厂面试题每一题）,包含字节、百度、腾讯、京东等大量真题。
 
 本群对躺平会员零容忍，不发语音打卡当日必踢。
@@ -15,3 +34,11 @@
 
 
 ![wx](./assets/wx.png)
+
+
+
+## 🚘 大纲
+
+<h3 style="text-align: center" align="center">Javascript</h3>
+
+- [0.1 + 0.2 === 0.3 嘛？为什么？怎么解决？](https://github.com/su37josephxia/frontend-interview/issues/2)
