@@ -21,11 +21,14 @@
 
 本仓库为语音打卡社群（前端大厂面试题每一题）,包含字节、百度、腾讯、京东等大量真题。
 
-========
-🔥 本群对躺平会员零容忍，不发语音打卡当日必踢。
-🔥 本群对躺平会员零容忍，不发语音打卡当日必踢。
-🔥 本群对躺平会员零容忍，不发语音打卡当日必踢。
-========
+----
+# 🔥 本群对躺平会员零容忍，不发语音打卡当日必踢。
+# 🔥 本群对躺平会员零容忍，不发语音打卡当日必踢。
+# 🔥 本群对躺平会员零容忍，不发语音打卡当日必踢。
+----
+
+
+
 ## 🚀 Why 
  - 痛点：知识懂 说不好
  - 刻意练习解决
@@ -52,5 +55,8 @@ https://github.com/su37josephxia/frontend-interview/tree/main/mianjing
 <h3 style="text-align: center" align="center">Javascript</h3>
 
 - [0.1 + 0.2 === 0.3 嘛？为什么？怎么解决？](https://github.com/su37josephxia/frontend-interview/issues/2)
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 3cf4b96563a8092b3cc0a0546643af027c71193f
