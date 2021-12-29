@@ -55,8 +55,3 @@ https://github.com/su37josephxia/frontend-interview/tree/main/mianjing
 <h3 style="text-align: center" align="center">Javascript</h3>
 
 - [0.1 + 0.2 === 0.3 嘛？为什么？怎么解决？](https://github.com/su37josephxia/frontend-interview/issues/2)
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 3cf4b96563a8092b3cc0a0546643af027c71193f
