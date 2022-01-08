@@ -1,5 +1,8 @@
 # 参考文件
 
+## 很好玩的几道笔试题
+https://www.kancloud.cn/yoko6/web/518989
+
 ## B栈大神
 - [前端知识体系](https://www.bilibili.com/video/BV1iJ411T79p)
 - [萌妹子的知识体系](https://bilibili.com/video/BV1xA411Y7kK)
