@@ -74,28 +74,42 @@ Antfu ![image-20220110184054522](https://gitee.com/josephxia/picgo/raw/master/ju
 https://github.com/vueuse/vueuse
 
 ```js
-import {reactive, ref, effect} from "@vue/reactivity";
+import { createApp, h, watchEffect, reactive } from "vue";
 // 抽象的LocalStorage解决方案
-const useLocalStorage(key, defaultValue){
-    const data = reactive({});
-    Object.assign(data, localStorage[key] && JSON.parse(localStorage[key]) || defaultValue);
-    effect(() => localStorage[key] = JSON.stringify(data));
-    return data;
-}
-
-
-
-// 用于指定持久化方案
-const useStorage(defaultValue) {
-  	return useLocalStorage('store',defaultValue)
-}
+const useLocalStorage = (key, defaultValue) => {
+  const data = reactive({});
+  Object.assign(
+    data,
+    (localStorage[key] && JSON.parse(localStorage[key])) || defaultValue
+  );
+  watchEffect(() => (localStorage[key] = JSON.stringify(data)));
+  return data;
+};
 ```
 
+上面是一个抽象Localstore钩子
 
+```js
+// 用于指定持久化方案
+const useStorage = (defaultValue) => {
+  return useLocalStorage("store", defaultValue);
+};
+const store = useStorage({count: 0})
+```
 
 下面我们用偏应用函数恶搞一下他
 
-```
+```js
+// 偏应用函数
+const partial =
+(f, ...args) =>
+(...moreArgs) =>
+f(...args, ...moreArgs);
+
+// 指定使用LocalStorage存储
+const useStorage = partial(useLocalStorage, "store");
+// 声明响应式数据
+const store = partial(useStorage, { count: 0 });
 ```
 
 
@@ -110,5 +124,17 @@ https://github.com/su37josephxia/vue3-vs-vue2/blob/master/reactivity/src/LocalSt
 
 ### 实例3： React Hooks
 
+reacthook原理没有区别，欢迎大家补充
 
+
+
+## 面试攻略
+
+- 无
+
+
+
+## 点评
+
+- 闭包处处都有，但是能说出经典应用又是一个难题。说Helloworld和背题没啥区别。
 

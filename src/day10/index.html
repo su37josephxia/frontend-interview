@@ -13,9 +13,10 @@
   };
 
   // // 用于指定持久化方案
-  // const useStorage = (defaultValue) => {
-  //   return useLocalStorage("store", defaultValue);
-  // };
+  const useStorage = (defaultValue) => {
+    return useLocalStorage("store", defaultValue);
+  };
+  const store = useStorage({count: 0})
 
   // 偏应用函数
   const partial =
