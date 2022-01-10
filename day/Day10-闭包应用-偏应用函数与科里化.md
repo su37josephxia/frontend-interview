@@ -114,8 +114,6 @@ const store = partial(useStorage, { count: 0 });
 
 
 
-
-
 完整的例子
 
 https://github.com/su37josephxia/vue3-vs-vue2/blob/master/reactivity/src/LocalStorage.vue
