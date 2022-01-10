@@ -10,7 +10,7 @@
 
 我们可以把他翻译成局部应用
 
-将一个双参数的add函数变为一个addOne
+将一个三参数的add函数变为一个addOne
 
 > 参考 https://github.com/hemanth/functional-programming-jargon#partial-application
 
@@ -83,11 +83,22 @@ const useLocalStorage(key, defaultValue){
     return data;
 }
 
+
+
 // 用于指定持久化方案
 const useStorage(defaultValue) {
   	return useLocalStorage('store',defaultValue)
 }
 ```
+
+
+
+下面我们用偏应用函数恶搞一下他
+
+```
+```
+
+
 
 
 

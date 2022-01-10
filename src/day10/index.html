@@ -1,0 +1,42 @@
+<div id="app"></div>
+<script type="module">
+  import { createApp, h, watchEffect, reactive } from "vue";
+
+  const useLocalStorage = (key, defaultValue) => {
+    const data = reactive({});
+    Object.assign(
+      data,
+      (localStorage[key] && JSON.parse(localStorage[key])) || defaultValue
+    );
+    watchEffect(() => (localStorage[key] = JSON.stringify(data)));
+    return data;
+  };
+
+  // // 用于指定持久化方案
+  // const useStorage = (defaultValue) => {
+  //   return useLocalStorage("store", defaultValue);
+  // };
+
+  // 偏应用函数
+  const partial =
+    (f, ...args) =>
+    (...moreArgs) =>
+      f(...args, ...moreArgs);
+
+  // 指定使用LocalStorage存储
+  const useStorage = partial(useLocalStorage, "store");
+  // 声明响应式数据
+  const store = partial(useStorage, { count: 0 });
+
+  createApp({
+    setup: () => {
+      const store = useStorage({ count: 0 });
+      setInterval(() => store.count++, 1000);
+      return store;
+    },
+    render() {
+      // <div><div>Hello  Vite</div></div>
+      return h("div", null, [h("div", null, String(this.count))]);
+    },
+  }).mount("#app");
+</script>

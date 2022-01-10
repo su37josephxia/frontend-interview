@@ -1,0 +1,13 @@
+{
+  "name": "day10",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "vite"
+  },
+  "dependencies": {
+    "vite": "^2.7.10",
+    "vue": "^3.2.26"
+  }
+}
