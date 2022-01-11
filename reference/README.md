@@ -3,6 +3,9 @@
 ## 很好玩的几道笔试题
 https://www.kancloud.cn/yoko6/web/518989
 
+## 八大陷阱
+https://www.jb51.net/article/117337.htm
+
 ## B栈大神
 - [前端知识体系](https://www.bilibili.com/video/BV1iJ411T79p)
 - [萌妹子的知识体系](https://bilibili.com/video/BV1xA411Y7kK)
