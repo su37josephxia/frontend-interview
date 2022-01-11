@@ -10,7 +10,7 @@
 
 我们可以把他翻译成局部应用
 
-将一个三参数的add函数变为一个addOne
+将一个三参数的add函数变为一个add3
 
 > 参考 https://github.com/hemanth/functional-programming-jargon#partial-application
 
@@ -116,13 +116,13 @@ const store = partial(useStorage, { count: 0 });
 
 完整的例子
 
-https://github.com/su37josephxia/vue3-vs-vue2/blob/master/reactivity/src/LocalStorage.vue
+https://github.com/su37josephxia/frontend-interview/blob/main/day/10/index.html
 
 
 
 ### 实例3： React Hooks
 
-reacthook原理没有区别，欢迎大家补充
+reacthook原理没有区别，欢迎大家补充。
 
 
 

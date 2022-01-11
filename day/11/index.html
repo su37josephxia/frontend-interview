@@ -1,0 +1,24 @@
+<script src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    
+
+
+  const $ = () => console.log("Not jQuery");
+  (function ($) {
+    $(document).ready(function () {
+      console.log("Hello jQuery");
+    });
+  })(jQuery);
+
+  const ary = [];
+  for (var i = 0; i < 5; i++) {
+    (function(n) {
+        ary.push(function () {
+          return console.log(n);
+        });
+    })(i)
+  }
+  ary[0]();
+  ary[1]();
+ 
+</script>
