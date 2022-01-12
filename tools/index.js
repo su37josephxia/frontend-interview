@@ -21,6 +21,13 @@ async function getIssue() {
       console.log("labels:", v.labels);
     });
 }
+// getIssue()
+
+async function getOne() {
+  const body = await request(url + '/2')
+   console.log('body',JSON.parse(body).body)
+}
+getOne()
 
 /**
  *
