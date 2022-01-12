@@ -1,3 +1,3 @@
-export default function jQuery() {
-    console.log('I am jQuery')
-} 
+export default function jquery() {
+    console.log('I am jquery')
+}

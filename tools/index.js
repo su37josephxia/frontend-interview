@@ -1,60 +1,35 @@
-var request = require("./request");
-const fs = require("fs");
-const readline = require("readline");
+const { readLog, writeLog } = require("./log");
+const issue = require("./issue");
+const moment = require('moment')
 
-var url =
-  "https://api.github.com/repos/su37josephxia/frontend-interview/issues";
+const createTemplate = ({updated, title, billbill, juejin,github }) => `- [${title}] [ 📺 Billbill视频 ](${billbill}) [ 📚 掘金文稿 ](${juejin}) [ 🐱 Github ](${github})`;
+(async function () {
+  // const detail = await getDetail(2)
 
-/**
- * 获取Issue列表
- */
-async function getIssue() {
-  const body = await request(url);
-  console.log("body", body.toString());
-  const json = JSON.parse(body);
-  json
-    .filter((v) => v.state === "open")
-    .forEach((v) => {
-      console.log(v);
-      console.log("title:", v.title);
-      console.log("html_url", v.html_url);
-      console.log("labels:", v.labels);
+  // for (let i = 0; i < 10; i++) {
+  //   const detail = await getDetail(i);
+  //   const body = parseContent(detail);
+  //   if (body.isOK) {
+  //     const out = `- ${detail.title}]
+  //   - [ 📺 Billbill视频 ](${body.billbill}) [ 掘金文稿 ](${body.juejin})`;
+  //     console.log(out);
+  //   }
+  // }
+
+  // const list = await getList();
+  // writeLog(list)
+  const list = await readLog();
+  list
+    .map((v) => {
+      const body = issue.parseContent(v)
+      if(body.isOK) {
+        console.log(createTemplate({
+          billbill : body.billbill,
+          juejin: body.juejin,
+          title: v.title,
+          github: v.html_url,
+          updated : moment(v.updated_at).format('YYYY-MM-DD')
+        }))
+      }
     });
-}
-// getIssue()
-
-async function getOne() {
-  const body = await request(url + '/2')
-   console.log('body',JSON.parse(body).body)
-}
-getOne()
-
-/**
- *
- */
-async function write() {
-  const input = fs.createReadStream('../README.md');
-  // const output = fs.createWriteStream('../README.md')
-  const output = []
-
-  const rl = readline.createInterface({
-    input: input,
-    crlfDelay: Infinity,
-  });
-  let start = false
-  for await (const line of rl) { 
-    // console.log('line:', line)
-    if(line === '## 🚘 大纲') {
-      console.log('666')
-    }
-    start && console.log('line:',line)
-
-    output.push('>' +line + '\n')
-
-  }
-
-  fs.writeFileSync('../README.md',output.join(''))
-
-}
-write()
-// getIssue();
+})();

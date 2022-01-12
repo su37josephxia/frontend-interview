@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/su37josephxia/frontend-interview#readme",
   "dependencies": {
+    "moment": "^2.29.1",
     "request": "^2.88.2",
     "smarty-press": "latest"
   }
