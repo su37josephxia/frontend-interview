@@ -1,2 +1,2 @@
-const a = require("./a");
-console.log(a);
+const a = require('./a.js')
+console.log(a)

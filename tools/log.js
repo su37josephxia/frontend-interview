@@ -6,7 +6,7 @@ const writeLog = (json) => {
 }
 
 const readLog = () => {
-    return JSON.parse(fs.readFileSync(`./out/1642027961944.json`))
+    return JSON.parse(fs.readFileSync(`./out/1642248093937.json`))
 }
 
 module.exports = {

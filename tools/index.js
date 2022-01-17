@@ -1,8 +1,11 @@
 const { readLog, writeLog } = require("./log");
 const issue = require("./issue");
-const moment = require('moment')
+// const moment = require('moment')
+// const createTemplate = require('./template')
 
-const createTemplate = ({updated, title, billbill, juejin,github }) => `- [${title}] [ 📺 Billbill视频 ](${billbill}) [ 📚 掘金文稿 ](${juejin}) [ 🐱 Github ](${github})`;
+
+
+
 (async function () {
   // const detail = await getDetail(2)
 
@@ -16,20 +19,28 @@ const createTemplate = ({updated, title, billbill, juejin,github }) => `- [${tit
   //   }
   // }
 
-  // const list = await getList();
+  // var list = await issue.getList();
   // writeLog(list)
-  const list = await readLog();
+  list = await readLog();
   list
     .map((v) => {
       const body = issue.parseContent(v)
       if(body.isOK) {
-        console.log(createTemplate({
+        // const render = createTemplate('weixin')
+        const data = {
           billbill : body.billbill,
           juejin: body.juejin,
           title: v.title,
           github: v.html_url,
-          updated : moment(v.updated_at).format('YYYY-MM-DD')
-        }))
+          // updated : moment(v.updated_at).format('YYYY-MM-DD')
+        }
+        console.log(`
+${data.title}
+  📺 Billbill视频 ${data.billbill}
+  📚 掘金文稿 ${data.juejin}`)
+        // 微信
+        // console.log(render(data))
       }
     });
+
 })();
