@@ -1,0 +1,12 @@
+<script>
+    Object.keys(window).forEach(
+        k => {
+            
+            const o = window[k]
+            if(typeof o === 'object' && o !== null){
+                console.table(k ,o)
+            }
+            
+        }
+    )
+</script>

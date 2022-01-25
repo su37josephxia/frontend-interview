@@ -1,0 +1,102 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lazyload</title>
+    <!-- 一定记得设置图片高度 -->
+    <style>
+      .image-item {
+        display: block;
+        margin-bottom: 50px;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src=""
+      class="image-item"
+      lazyload="true"
+      data-original="https://gitee.com/josephxia/picgo/raw/master/juejin/image-20220124221805647.png?a=1"
+    />
+    <img
+      src=""
+      class="image-item"
+      lazyload="true"
+      data-original="https://gitee.com/josephxia/picgo/raw/master/juejin/image-20220124221805647.png?a=2"
+    />
+    <img
+      src=""
+      class="image-item"
+      lazyload="true"
+      data-original="https://gitee.com/josephxia/picgo/raw/master/juejin/image-20220124221805647.png?a=3"
+    />
+    <img
+      src=""
+      class="image-item"
+      lazyload="true"
+      data-original="https://gitee.com/josephxia/picgo/raw/master/juejin/image-20220124221805647.png?a=4"
+    />
+    <img
+      src=""
+      class="image-item"
+      lazyload="true"
+      data-original="https://gitee.com/josephxia/picgo/raw/master/juejin/image-20220124221805647.png?a=5"
+    />
+    <img
+      src=""
+      class="image-item"
+      lazyload="true"
+      data-original="https://gitee.com/josephxia/picgo/raw/master/juejin/image-20220124221805647.png?a=6"
+    />
+    <img
+      src=""
+      class="image-item"
+      lazyload="true"
+      data-original="https://gitee.com/josephxia/picgo/raw/master/juejin/image-20220124221805647.png?a=7"
+    />
+    <img
+      src=""
+      class="image-item"
+      lazyload="true"
+      data-original="https://gitee.com/josephxia/picgo/raw/master/juejin/image-20220124221805647.png?a=8"
+    /><img
+      src=""
+      class="image-item"
+      lazyload="true"
+      data-original="https://gitee.com/josephxia/picgo/raw/master/juejin/image-20220124221805647.png?a=9"
+    />
+    <img
+      src=""
+      class="image-item"
+      lazyload="true"
+      data-original="https://gitee.com/josephxia/picgo/raw/master/juejin/image-20220124221805647.png?a=10"
+    />
+
+    <script>
+      var viewHeight = document.body.clientHeight;
+      //获取可视区高度
+      function lazyload() {
+        console.log('load')
+        var list = document.querySelectorAll("img[data-original][lazyload]");
+        list.forEach((item) => {
+          if (item.dataset.original === "") return;
+          var rect = item.getBoundingClientRect();
+          console.log('图片相对位置top',rect.top)
+          // 获得图片相对浏览器视窗的位置
+          if (rect.bottom >= 0 && rect.top < viewHeight) {
+            var img = new Image();
+            img.src = item.dataset.original;
+            img.onload = function () {
+              item.src = img.src;
+            };
+            item.removeAttribute("data-original");
+            //移除属性，下次不再遍历
+            item.removeAttribute("lazyload");
+          }
+        });
+      }
+      lazyload(); //刚开始还没滚动屏幕时，要先触发一次函数，初始化首页的页面图片
+      document.addEventListener("scroll", lazyload);
+    </script>
+  </body>
+</html>
