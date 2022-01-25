@@ -20,9 +20,15 @@
   },
   "homepage": "https://github.com/su37josephxia/frontend-interview#readme",
   "dependencies": {
+    "@slidev/cli": "^0.28.2",
+    "@slidev/theme-apple-basic": "^0.20.0",
+    "@slidev/theme-bricks": "^0.0.2",
+    "@slidev/theme-default": "^0.21.1",
+    "@slidev/theme-seriph": "^0.21.1",
     "handlebars": "^4.7.7",
     "moment": "^2.29.1",
     "request": "^2.88.2",
+    "slidev-theme-takahashi": "^1.0.0",
     "smarty-press": "latest"
   },
   "devDependencies": {
