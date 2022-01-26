@@ -9,6 +9,7 @@ background: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 
 # Day25 - HTML5新特性
+全栈然叔
 
 ---
 layout: full
@@ -255,7 +256,7 @@ url: contenteditable.html
 class: my-cool-content-on-the-right
 ---
 
-# datalist
+# 可编辑属性（）
 它被广泛的应用，比如很多网页编辑器，内容切换编辑状态等等，都可以通过这个属性来实现。
 
 ```html
