@@ -1,14 +1,9 @@
 ---
-# try also 'default' to start simple
 theme: seriph
-# theme: takahashi
-# theme: bricks
-# theme: apple-basic
 background: https://source.unsplash.com/collection/94734566/1920x1080
-
 ---
 
-# Canvas 与 SVG
+# Day26 - Canvas 与 SVG
 全栈然叔
 
 ---
@@ -119,6 +114,6 @@ function valueToPoint (value, index, total) {
 | 大数据量     | ✅      | ❌    |
 | 高交互场景   | ✅      | ❌    |
 | 可导出图片   | ✅      | ❌    |
-| 放大失真     | ❌      | ✅    |
+| 放大不失真     | ❌      | ✅    |
 | 支持事件处理 | ❌      | ✅    |
 | 文字可编辑   | ❌      | ✅    |
