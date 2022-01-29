@@ -125,6 +125,9 @@ function updateUser(id: number, update: User) {
   saveUser(id, newUser)
 }
 ```
+<h1 v-click="1">123213</h1>
+
+<arrow v-click="2" x1="100" y1="420" x2="230" y2="330" color="#54" width="3" arrowSize="1" />
 
 <arrow v-click="3" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
 

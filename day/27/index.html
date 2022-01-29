@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        console.log("DOMContentLoaded HTML解析完毕");
+      });
+      window.addEventListener("load", (event) => {
+        console.log("loaded 资源加载完毕");
+      });
+    </script>
+    <!-- <script src="header.js?wait=1000"></script> -->
+    <!-- <script src="head.js?wait=1000" defer="defer"></script> -->
+  </head>
+  <body>
+    <h1>DOM 开始</h1>
+    <!-- <script src="normal.js?wait=1000"></script> -->
+    <h1>内容2</h1>
+    <!-- <script async="async" src="async1.js?wait=1000"></script>
+    <script async="async" src="async2.js?wait=1000"></script> -->
+    <h1>内容3</h1>
+    <!-- <script defer="defer" src="defer1.js?wait=1100"></script>
+    <script defer="defer" src="defer2.js?wait=1000"></script> -->
+    <h1>DOM 结束</h1>
+  </body>
+</html>
