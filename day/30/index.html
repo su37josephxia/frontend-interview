@@ -1,0 +1,32 @@
+<h1>WebWorker : <span id="c1"></span></h1>
+<h1>ServiceWorker : <span id="c2"></span></h1>
+<script>
+  const c1 = document.getElementById("c1");
+  const worker = new Worker("./webworker.js");
+  const msg = "Hello";
+  console.log("page send:" + msg);
+  worker.postMessage(msg);
+  worker.onmessage = (e) => {
+    // document.write(`<p>page receive: ` + e.data+ `</p>`);
+    c1.textContent = e.data;
+  };
+
+  if ("serviceWorker" in window.navigator) {
+    const c2 = document.getElementById("c2");
+    navigator.serviceWorker
+      .register("./serviceworker.js", { scope: "./" })
+      .then(function (reg) {
+        console.log("success", reg);
+        const sw = reg.active;
+        sw.postMessage("hello service worker");
+      });
+
+    navigator.serviceWorker.onmessage = (e) => {
+      c2.textContent = e.data;
+    };
+    // ...
+  }
+
+</script>
+
+<script src="./delay.js"></script>
