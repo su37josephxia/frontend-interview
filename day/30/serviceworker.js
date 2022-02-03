@@ -14,7 +14,7 @@ setInterval(() => {
 }, 1000);
 
 self.addEventListener("fetch", async (e) => {
-  console.log("fetch:", e.request.url, e);
+  console.log("fetch:", e.request.url);
   if (e.request.url.endsWith("delay.js")) {
     e.respondWith(
       caches.match(e.request).then((response) => {
