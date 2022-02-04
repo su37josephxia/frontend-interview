@@ -1,0 +1,9 @@
+{
+  "name": "32",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "magic-string": "^0.25.7"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "31",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "webpack"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.68.0",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "dependencies": {
+    "css-loader": "^6.6.0",
+    "html-webpack-plugin": "^5.5.0",
+    "raw-loader": "^4.0.2",
+    "webpack-cli": "^4.9.2"
+  }
+}
