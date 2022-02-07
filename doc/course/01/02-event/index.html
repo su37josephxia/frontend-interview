@@ -1,0 +1,61 @@
+<style>
+  div {
+    margin: 10%;
+  }
+</style>
+
+<div id="div1" style="background-color: red">
+  div1
+  <div id="div2" style="background-color: royalblue">
+    div2
+    <div id="div3" style="background-color: violet">
+      div3
+      <div id="div4" style="background-color: green">div4</div>
+    </div>
+  </div>
+</div>
+<script>
+  [1, 2, 3, 4]
+    .map((id) => ({
+      id,
+      dom: document.getElementById("div" + id),
+    }))
+    .map(({ id, dom }) => {
+      dom.addEventListener(
+        "click",
+        (e) => {
+          console.log("click冒泡:" + id);
+          //   e.stopPropagation(); // 停止冒泡
+          //   e.cancelBubble; // IE 6 7 8 的停止冒泡
+          // return false
+        },
+        false // 冒泡
+      );
+      return {
+        id,
+        dom,
+      };
+    });
+  // .map(({ id, dom }) => {
+  //   console.log("dom", dom);
+  //   dom.addEventListener(
+  //     "click",
+  //     () => {
+  //       console.log("click捕获:" + id);
+  //     },
+  //     true // 捕获
+  //   );
+  //   return {
+  //     id,
+  //     dom,
+  //   };
+  // });
+
+
+    // 事件委托给最上层
+    document.getElementById('div1')
+    .addEventListener('click',e => {
+      console.log('事件委托:', e.target)
+    })
+
+</script>
