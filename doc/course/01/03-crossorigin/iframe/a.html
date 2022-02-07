@@ -1,0 +1,19 @@
+
+
+<script>
+    let first = true;
+    // onload事件会触发2次，第1次加载跨域页，并留存数据于window.name
+    function load() {
+      if (first) {
+        console.log("load....");
+        // 第1次onload(跨域页)成功后，切换到同域代理页面
+        let iframe = document.getElementById("iframe");
+        iframe.src = "b.html";
+        first = false;
+      } else {
+        // 第2次onload(同域b.html页)成功后，读取同域window.name中数据
+        console.log("传值:", iframe.contentWindow.name);
+      }
+    }
+  </script>
+  <iframe frameborder="0" onload="load()" id="iframe"></iframe>

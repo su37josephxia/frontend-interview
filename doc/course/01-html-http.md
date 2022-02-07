@@ -3,7 +3,7 @@ theme: seriph
 background: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 
-# Day01 面试题精讲： HTML与HTTP
+# Day01 HTML与HTTP
 全栈然叔
 
 --- 
