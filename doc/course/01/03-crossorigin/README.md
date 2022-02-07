@@ -21,7 +21,7 @@
 
 ---
 
-# 九大解决方案
+# 11大解决方案
 - jsonp
 - cors
 - postMessage

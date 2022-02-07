@@ -26,7 +26,7 @@ const parseContent = ({ body }) => {
   var billbill = m(/\[B栈视频\]\(([^)]*)\)/, body);
   var juejin = m(/\[掘金文章\]\(([^)]*)\)/, body);
   return {
-    isOK: billbill !== null && juejin !== null,
+    isOK: billbill !== null ,
     billbill,
     juejin,
   };

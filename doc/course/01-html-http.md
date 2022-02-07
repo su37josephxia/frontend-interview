@@ -17,13 +17,15 @@ background: https://source.unsplash.com/collection/94734566/1920x1080
 
 # 面试课安排
 ### Lesson01 HTML与HTTP
-    - HTML4、HTML5
-    - 浏览器、渲染过程、缓存、存储、Serviceworker
-    - HTTP、HTTPS、HTTP2、HTTP3
-    - 手写HTTP、协商缓存、跨域九法、Websocket、GraphQL、RPC
+    - 浏览器、渲染过程、回流与重绘、Dom操作、虚拟Dom
+    - 事件流、冒泡、捕获、委托
+    - 异步加载、图片懒加载、缓存、存储
+    - HTML5特性、语义化标签、Serviceworker、编程式Cache
+    - 手写HTTP、强/协商缓存、跨域九法、Websocket、GraphQL、RPC
 #
 ### Lesson02 网络（HTTP2，HTTPS）、Node、异步编程
     - 网络基础、OSI七层、TCP与UDP、三次握手
+    - HTTP、HTTPS、HTTP2、HTTP3
     - CDN
     - 网络安全XSS
     - VPN与网络隧道技术、暗网
@@ -32,6 +34,10 @@ background: https://source.unsplash.com/collection/94734566/1920x1080
     - 异步处理、同步异步、事件循环
     - BFF 与 中台
     - Thunk、Generator、Co、Promise、Async/Await
+
+
+---
+
 #
 ### Lesson03 工程化与Webpack
     - webpack、概念、原理、优化
@@ -47,9 +53,6 @@ background: https://source.unsplash.com/collection/94734566/1920x1080
 - 翻墙的原理，为什么翻墙可以访问外网 - VPN、Tunnel
 - 防抖和节流 -  这是JS基础题 看天天造轮子
 - 其他定义性题目 - 略
-
-
-
 
 ---
 
@@ -75,8 +78,13 @@ background: https://source.unsplash.com/collection/94734566/1920x1080
 - 语义化标签 [🔗](https://github.com/su37josephxia/frontend-interview/issues/74)
 
 - innerHTML、 nodeValue与 textContent之间的区别 [🔗](https://github.com/su37josephxia/frontend-interview/issues/26)
+
+- Dom节点的增删改查 、虚拟DOM
+
 - document以外的子对象 [🔗](https://github.com/su37josephxia/frontend-interview/issues/30)
+  
 - 简述一下浏览器渲染过程 [🔗](https://github.com/su37josephxia/frontend-interview/issues/80)
+
 - 回流和重绘 [🔗](https://github.com/su37josephxia/frontend-interview/issues/81)
 
 

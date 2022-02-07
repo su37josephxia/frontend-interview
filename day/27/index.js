@@ -28,7 +28,7 @@ const server = http.createServer(async (req, res) => {
     await delay(tick);
     res.write(
       `
-debugger;
+// debugger;
 console.log('${url.path}');
     `
     );
