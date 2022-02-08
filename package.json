@@ -27,6 +27,7 @@
     "@slidev/theme-seriph": "^0.21.1",
     "express": "^4.17.2",
     "handlebars": "^4.7.7",
+    "inquirer": "^8.2.0",
     "moment": "^2.29.1",
     "playwright-chromium": "^1.18.1",
     "request": "^2.88.2",

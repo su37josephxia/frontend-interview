@@ -1,3 +1,7 @@
+/**
+ * 将slidev文件自动转化为Markdown
+ */
+
 const fs = require('fs')
 const readline = require('readline');
 
