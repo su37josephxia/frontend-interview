@@ -1,3 +1,7 @@
+/**
+ * 读取issue数据生成列表
+ */
+
 const { readLog, writeLog } = require("./lib/log");
 const {
   getDetail,
