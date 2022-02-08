@@ -25,7 +25,6 @@ if (process.argv[2]) {
 async function list() {
   let list = readLog();
   list = list
-    .sort((a, b) => parseDayNumber(a.title) - parseDayNumber(b.title))
     .map((v) => {
       // 解析body内容
       const body = parseContent(v);
@@ -40,7 +39,8 @@ async function list() {
       }
       return data;
     })
-    .filter((v) => v !== null);
+    .filter((v) => v !== null)
+    .sort((a, b) => parseDayNumber(a.title) - parseDayNumber(b.title))
 
   // 生成模板
   render({ list }, "./template/juejin.hbs", "./out/juejin.md");
@@ -68,8 +68,8 @@ function render(meta, template, file) {
  */
 async function log() {
   var list = await getList();
-  list
+  list = list
     .sort((a, b) => a.number - b.number)
-    .map((v) => console.log(`获取 ${v.number} ${v.title}`));
+    // .map((v) => console.log(`获取 ${v.number} ${v.title}`));
   writeLog(list);
 }

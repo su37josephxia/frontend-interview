@@ -28,6 +28,7 @@
     "express": "^4.17.2",
     "handlebars": "^4.7.7",
     "moment": "^2.29.1",
+    "playwright-chromium": "^1.18.1",
     "request": "^2.88.2",
     "slidev-theme-takahashi": "^1.0.0",
     "smarty-press": "latest"
