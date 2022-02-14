@@ -14,6 +14,7 @@ background: https://source.unsplash.com/collection/94734566/1920x1080
 function delayLog(msg, cb) {
     setTimeout(() => {
       console.log(msg);
+      cb()
     }, 1000);
   }
 delayLog('cb1', ()=> {
@@ -38,6 +39,11 @@ delayLog('cb1', ()=> {
 ---
 
 # thunk其实就是把惰性函数包装称一个Thunk函数
+Thunk函数早在上个世纪60年代就诞生了。
+
+那时，编程语言刚刚起步，计算机学家还在研究，
+
+编译器怎么写比较好。一个争论的焦点是"求值策略"，即函数的参数到底应该何时求值。
 
 ```js
     // 传值调用 call by value
@@ -45,6 +51,7 @@ delayLog('cb1', ()=> {
     const total = 1 + 2 
     // 改为惰性函数
     // 运行期完成
+    // 传名调用 call by name
     const total = (() => 1 + 2)()
 
 ```
@@ -56,12 +63,12 @@ delayLog('cb1', ()=> {
 - 参数可以不事先确定
 
 ```js
-    // 传值调用 call by value
-    // 编译期完成
     const total = 1 + x
-    // 改为惰性函数
-    // 运行期完成
-    const total = ((x) => 1 + x)(x)
+    // 假设x无法确定
+    const thunk = x => 1 + x
+
+    // 运行时在确定
+    const total = thunk(x)
 
 ```
 
@@ -79,10 +86,9 @@ const p2 = delayLogThunk("T2");
 const p3 = delayLogThunk("T3");
 const p4 = delayLogThunk("T4");
 
-// const generator = ([first,second]) => () => second(first())
-const generator = (args) => () => args.reduce((a, b) => () => b(a()))();
-generator([p1, p2, p3, p4])();
-
+const gen2 = (args) => 
+  () => args.reduceRight((a, b) => () => b(() => a()))();
+gen2([p1, p2, p3, p4])();
 ```
 
 ---

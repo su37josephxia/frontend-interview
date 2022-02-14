@@ -6,11 +6,10 @@
 // // 传名调用 call by name
 // const sum = () => 1 + 2
 
-// thunk其实就是把惰性函数包装称一个Thunk函数
+// thunk其实就是把惰性函数包装一个Thunk函数
 // 先调这个辅助函数求出参数值，再进入函数主体
 // 1 : total = 1 + 2
 // 2 : total = (() => 1 + 2)()
-
 
 // Thunk函数早在上个世纪60年代就诞生了。
 // 那时，编程语言刚刚起步，计算机学家还在研究，
@@ -24,16 +23,16 @@
 // 将取值过程转变为执行计划
 
 function delayLog(msg, cb) {
-    setTimeout(() => {
-      console.log(msg);
-    }, 1000);
-  }
-delayLog('cb1', ()=> {
-    delayLog('cb2')
-})
+  setTimeout(() => {
+    console.log(msg);
+    cb && cb();
+  }, 1000);
+}
+// delayLog('cb1', ()=> {
+//     delayLog('cb2', )
+// })
 
 // 关键点是无法确定cb函数 所以通过一次科里化变幻将可以可确定和不可确定的分开
-
 
 const delayLogThunk = (msg) => (cb) => delayLog(msg, cb);
 
@@ -42,9 +41,14 @@ const p2 = delayLogThunk("T2");
 const p3 = delayLogThunk("T3");
 const p4 = delayLogThunk("T4");
 
-// p2(p1())
+// p1(() => p2())
 
-// const ary = [p1, p2]
-// const generator = ([first,second]) => () => second(first())
-const generator = (args) => () => args.reduce((a, b) => () => b(a()))();
-generator([p1, p2, p3,p4])();
+const gen =
+  ([first, second]) =>
+  () =>
+    first(() => second());
+// gen([p1, p2])();
+
+const gen2 = (args) => 
+  () => args.reduceRight((a, b) => () => b(() => a()))();
+gen2([p1, p2, p3, p4])();
