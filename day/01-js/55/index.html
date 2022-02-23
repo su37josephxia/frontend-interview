@@ -1,0 +1,54 @@
+<div id="list">
+  <div>Node1</div>
+  <div>Node2</div>
+  <div>Node3</div>
+</div>
+<script>
+  //   const list = {
+  //     array: [1, 2, 3],
+  //     String: "string",
+  //     Map: new Map([
+  //       [1, "m1"],
+  //       [2, "m2"],
+  //     ]),
+  //     Set: new Set(["s1", "s2"]),
+  //     NodeList: document.querySelector("#list").childNodes,
+  //   };
+
+  //   for (key in list) {
+  //     console.log(`====${key}=====`);
+  //     for (obj of list[key]) {
+  //       console.log(obj);
+  //     }
+  //   }
+
+  const a = [1, 2];
+  // 获取数组对象的遍历器
+  const it = a[Symbol.iterator]();
+  console.log(it.next());
+
+  const list = {
+    a: 1,
+    b: 2,
+  };
+
+  addIterator = (obj) => {
+    obj[Symbol.iterator] = () => {
+      const ary = Object.keys(obj);
+      let index = 0;
+      return {
+        next: function () {
+          if (index < ary.length) {
+            return { done: false, value: ary[index++] };
+          } else {
+            return { done: true, value: undefined };
+          }
+        },
+      };
+    };
+  };
+  addIterator(list)
+  for (k of list) {
+    console.log("k", k);
+  }
+</script>
