@@ -1,12 +1,12 @@
 <div id="list">
-  <div>Node1</div>
-  <div>Node2</div>
-  <div>Node3</div>
+  <div>d1</div>
+  <div>d1</div>
+  <div>d1</div>
 </div>
 <script>
   //   const list = {
-  //     array: [1, 2, 3],
-  //     String: "string",
+  //     array: ["a1", "a2"],
+  //     String: "Stirng",
   //     Map: new Map([
   //       [1, "m1"],
   //       [2, "m2"],
@@ -14,41 +14,54 @@
   //     Set: new Set(["s1", "s2"]),
   //     NodeList: document.querySelector("#list").childNodes,
   //   };
-
   //   for (key in list) {
-  //     console.log(`====${key}=====`);
+  //     console.log(`=====${key}========`);
   //     for (obj of list[key]) {
-  //       console.log(obj);
+  //         console.log(obj)
   //     }
   //   }
 
-  const a = [1, 2];
-  // 获取数组对象的遍历器
-  const it = a[Symbol.iterator]();
-  console.log(it.next());
-
   const list = {
-    a: 1,
-    b: 2,
+    a: 'aaaa',
+    b: 'bbbb',
   };
 
-  addIterator = (obj) => {
+  const iterable = (obj) => {
+    // 添加iterator函数
     obj[Symbol.iterator] = () => {
+      // 返回一个遍历器
       const ary = Object.keys(obj);
       let index = 0;
       return {
         next: function () {
           if (index < ary.length) {
-            return { done: false, value: ary[index++] };
+            // 如果有下一个元素
+            // 返回本来元素
+            return {
+              done: false,
+              value: obj[ary[index++]],
+            };
           } else {
-            return { done: true, value: undefined };
+            // 没有 返回null
+            return {
+              done: true,
+              value: undefined,
+            };
           }
         },
       };
     };
   };
-  addIterator(list)
-  for (k of list) {
-    console.log("k", k);
+  iterable(list)
+
+  for (o of list) {
+    console.log(o);
   }
+
+  const ary = [1,2,3]
+  const it = ary[Symbol.iterator]()
+  console.log(it.next())
+  console.log(it.next())
+  console.log(it.next())
+
 </script>
