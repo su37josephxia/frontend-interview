@@ -1,27 +1,34 @@
-
 // 发布者
 class EventEmitter {
   constructor() {
-    this.handler = {};
+    this.handlers = {};
   }
+
   on(eventName, callback) {
-    if (!this.handles) {
-      this.handles = {};
+    if (!this.handlers) {
+      this.handlers = {};
     }
-    if (!this.handles[eventName]) {
-      this.handles[eventName] = [];
+    if (!this.handlers[eventName]) {
+      this.handlers[eventName] = [];
     }
-    this.handles[eventName].push(callback);
+    this.handlers[eventName].push(callback);
   }
+
   emit(eventName, ...arg) {
-    if (this.handles[eventName]) {
-      for (var i = 0; i < this.handles[eventName].length; i++) {
-        this.handles[eventName][i](...arg);
+    if (this.handlers[eventName]) {
+      for (let callback of this.handlers[eventName]) {
+        callback(...arg);
       }
     }
   }
 }
 
+// eventEmitter.on('done', (msg) => {
+//   console.log('done',msg)
+// })
+// setTimeout(() => {
+//   eventEmitter.emit('done',666)
+// },600)
 
 function delayLog(msg, cb) {
   setTimeout(() => {
@@ -30,17 +37,20 @@ function delayLog(msg, cb) {
   }, 1000);
 }
 
-const list = ["m1", "m2", "m3", "m4","m5"];
+// m1 , m2  ,m3
 
-const emitter = new EventEmitter();
+const eventEmitter = new EventEmitter();
+const list = ["m1", "m2", "m3","m4", "m5", "m6"];
+// done => next
 let i = 0;
-emitter.on("done", () =>
+eventEmitter.on("done", () => {
   delayLog(list[i], () => {
     if (i < list.length - 1) {
       i++;
-      emitter.emit("done");
+      eventEmitter.emit("done");
     }
-  })
-);
-emitter.emit("done", list[i]);
-// emitter.emit("done", list[i++]);
+  });
+});
+eventEmitter.emit('done', list[i])
+eventEmitter.emit('done', list[++i])
+eventEmitter.emit('done', list[++i])

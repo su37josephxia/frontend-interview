@@ -3,7 +3,7 @@ theme: seriph
 background: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 
-# Day55 订阅发布解决回调地狱(Iterator)
+# Day56 订阅发布解决回调地狱
 全栈然叔
 
 ---
