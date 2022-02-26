@@ -50,3 +50,9 @@ function quickSort(array) {
   const right = array.filter((v) => v > pivot);
   return [...quickSort(left), pivot, ...quickSort(right)];
 }
+
+const qs = (array) => [
+  ...quickSort(array.filter((v, i) => v <= pivot && i != array.length - 1)),
+  array[array.length - 1],
+  ...quickSort(array.filter((v) => v > pivot)),
+];
