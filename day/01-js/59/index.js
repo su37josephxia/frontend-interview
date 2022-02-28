@@ -1,0 +1,3 @@
+getTimeStamp() {
+    return Data.now()
+}
