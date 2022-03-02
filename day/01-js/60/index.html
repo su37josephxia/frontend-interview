@@ -1,0 +1,30 @@
+<div id="root"></div>
+<script>
+  class Element {
+    constructor(type, props) {
+      this.type = type;
+      this.props = props;
+    }
+  }
+  const React = {
+    createElement: (type, props = {}, ...children) =>
+      new Element(type, {
+        ...props,
+        children,
+      }),
+  };
+
+  const ReactDOM = {
+    render(element, container) {
+      const e = element();
+      container.innerHTML = `<${e.type}>${e.props.children[0]}</${e.type}>`;
+    },
+  };
+
+  // TODO createElement
+  const Title = () => React.createElement("h1", {}, "Helloworld");
+  //   const Title = () => <h1>Hello</h1>;
+
+  // Dom运行时环境
+  ReactDOM.render(Title, document.getElementById("root"));
+</script>
