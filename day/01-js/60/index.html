@@ -6,6 +6,7 @@
       this.props = props;
     }
   }
+
   const React = {
     createElement: (type, props = {}, ...children) =>
       new Element(type, {
@@ -14,17 +15,24 @@
       }),
   };
 
+  // 数据模型
+  // "Hello World"
+  const Title = () => React.createElement("h1", {}, "Hello World");
+
+  // 等效于
+  // const Title = () => (type, props = {} , ...children) =>
+  //     new Element(type,  {
+  //       ...props,
+  //       children
+  //     })
+
   const ReactDOM = {
-    render(element, container) {
-      const e = element();
-      container.innerHTML = `<${e.type}>${e.props.children[0]}</${e.type}>`;
+    render(createComponent, container) {
+      const component = createComponent();
+      container.innerHTML = `<${component.type}>${component.props.children[0]}</${component.type}>`;
     },
   };
 
-  // TODO createElement
-  const Title = () => React.createElement("h1", {}, "Helloworld");
-  //   const Title = () => <h1>Hello</h1>;
-
-  // Dom运行时环境
+  // 调用运行时环境
   ReactDOM.render(Title, document.getElementById("root"));
 </script>
