@@ -3,7 +3,7 @@ theme: seriph
 background: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 
-# Day01 HTML与HTTP
+# Day01 网络、HTTP、HTTPS
 全栈然叔
 
 ---
@@ -16,14 +16,7 @@ background: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 
 # 面试课安排
-### Lesson01 HTML与HTTP
-    - 浏览器、渲染过程、回流与重绘、Dom操作、虚拟Dom
-    - 事件流、冒泡、捕获、委托
-    - 异步加载、图片懒加载、缓存、存储
-    - HTML5特性、语义化标签、Serviceworker、编程式Cache
-    - 手写HTTP、强/协商缓存、跨域九法、Websocket、GraphQL、RPC
-#
-### Lesson02 网络（HTTP2，HTTPS）、Node、异步编程
+### Lesson01 网络（HTTP2，HTTPS）、Node、异步编程
     - 网络基础、OSI七层、TCP与UDP、三次握手
     - HTTP、HTTPS、HTTP2、HTTP3
     - CDN
@@ -35,9 +28,23 @@ background: https://source.unsplash.com/collection/94734566/1920x1080
     - BFF 与 中台
     - Thunk、Generator、Co、Promise、Async/Await
 
+
+
+### Lesson02 浏览器、HTML、性能优化
+
+    - 浏览器、渲染过程、回流与重绘、Dom操作、虚拟Dom
+    - 事件流、冒泡、捕获、委托
+    - 异步加载、图片懒加载、缓存、存储
+    - HTML5特性、语义化标签、Serviceworker、编程式Cache
+    - 手写HTTP、强/协商缓存、跨域九法、Websocket、GraphQL、RPC
+# 
+
+
+
 ---
 
 #
+
 ### Lesson03 工程化与Webpack
     - webpack、概念、原理、优化
     - Babel与AST
