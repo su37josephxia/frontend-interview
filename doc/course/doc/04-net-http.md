@@ -17,6 +17,8 @@ background: https://source.unsplash.com/collection/94734566/1920x1080
 
 # 面试课安排
 
+
+
 ### Lesson01 网络（HTTP2，HTTPS）
     - 网络基础、OSI七层、TCP与UDP、三次握手
     - HTTP、HTTPS、HTTP2、HTTP3
@@ -86,8 +88,9 @@ background: https://source.unsplash.com/collection/94734566/1920x1080
 
 第一步我们要先找到我们应该在哪做这个游戏，要不然是不是就是神仙打架。
 
-
 我们知道网络其实就是使用最少两根导线，将多个网络节点连接起来交换数据。
+
+
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4f1d7c5d6cfd498f94b48fbb8da61a4c~tplv-k3u1fbpfcp-zoom-1.image)
 
@@ -251,9 +254,13 @@ TCP 和 UDP 都在传输层这一层抽象出了 **ports 端口**的概念。
 
 
 
+
+
 2. 什么是半连接队列？
 
 服务器第一次收到客户端的 SYN 之后，就会处于 SYN_RCVD 状态，此时双方还没有完全建立其连接，服务器会把此种状态下请求连接放在一个**队列**里，我们把这种队列称之为**半连接队列**。
+
+
 
 
 
@@ -304,6 +311,8 @@ netstat -n -p TCP | grep SYN_RECV
 
 
 
+
+
 8. 精灵图这种合并图片以减少 HTTP 请求的技术，本质上是为了减少建立多个 TCP 连接带来的性能损耗
 
 9. HTTP/2 里，由于对单个 TCP 连接的多路复用，无需建立多个 TCP 连接
@@ -323,6 +332,12 @@ curl -v http://www.baidu.com
 
 
 #### 手写HTTP (代码演示10min)
+
+
+
+图书馆 
+
+- 图书单
 
 
 
@@ -399,6 +414,13 @@ session不足 cookie 浏览器机制
 
 #### 跨域的11种方法 (代码演示)
 
+- 代理服务  
+- jsonp
+
+
+
+
+
 > https://juejin.cn/post/6844903767226351623
 
 
@@ -406,6 +428,13 @@ session不足 cookie 浏览器机制
 ---
 
 ### Restful服务
+
+/getOrders
+
+
+
+
+
 #### RESTful API
 
 - Representational State Transfer翻译过来是"表现层状态转化"，它是一种互联网软件的架构原则。因此复合REST风格的Web API设计，就称它为RESTful API
@@ -939,8 +968,6 @@ vpn 全程是Virtual private network，它通过公共网络提供了专用网�
 ### HTTP3.0
 
 之所以要有HTTP3主要原因还在于上文提到的HTTP2存在的问题，这些问题的根源是底层支撑的TCP协议造成的。Google意识到这些问题之后，于是就提出了基于UDP协议的QUIC协议，让HTTP跑在QUIC上，而不是TCP上，这就是HTTP3，HTTP3解决了HTTP2存在的队头阻塞问题。
-
-
 
 https://juejin.cn/post/7024304793426329614
 
